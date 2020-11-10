@@ -2,8 +2,7 @@ import com.amazonaws.services.lambda.runtime.ClientContext;
 import com.amazonaws.services.lambda.runtime.CognitoIdentity;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.LambdaLogger;
-import handler.MessageHandler;
-import org.junit.Assert;
+import handler.QuasarFireHandler;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -16,9 +15,9 @@ import static org.junit.Assert.assertThat;
 
 
 @RunWith(MockitoJUnitRunner.class)
-public class MessageHandlerTest {
+public class QuasarFireHandlerTest {
 
-    private MessageHandler handler = new MessageHandler();
+    private QuasarFireHandler handler = new QuasarFireHandler();
 
     @Test
     public void getMessageSuccessfull() {
