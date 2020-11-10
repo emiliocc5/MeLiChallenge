@@ -20,8 +20,9 @@ public class Position {
     private float xPosition;
     private float yPosition;
 
-    public Position(Float x) {
-        this.xPosition = x;
+    public Position(Float xPosition, Float yPosition) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
     }
 
 
